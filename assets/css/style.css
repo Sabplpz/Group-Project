@@ -1,0 +1,73 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set up the body */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #0d253f;
+    color: #ffffff;
+  }
+  
+  /* Create the grid */
+  .container-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  
+  /* Create the containers */
+  .container {
+    background-color: #1f3c5f;
+    border: 1px solid #0d253f;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Style the first container */
+  .container-1 {
+    grid-column: 1 / span 2;
+  }
+  
+  /* Style the second container */
+  .container-2 {
+    grid-column: 3;
+  }
+  
+  /* Style the third container */
+  .container-3 {
+    grid-column: 4;
+  }
+  
+  /* Style the headings */
+  h1, h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  /* Style the links */
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+  }
+  
+  a:hover {
+    border-bottom: 2px solid #ffffff;
+  }
+  
