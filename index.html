@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Stargazers</title>
-	<script type="text/javascript" src="assets\js\script.js"></script>
-	<style type="text/css">
-	html, body {
-		margin: 0px;
+  <head>
+    <title>Stargazers</title>
+    <script type="text/javascript" src="assets\js\background.js"></script>
+    <style type="text/css">
+      html,
+      body {
+        margin: 0px;
         background: #ffffff;
         height: 100%;
-    }
-    canvas {
-		display: block;
+      }
+      canvas {
+        display: block;
         width: 100%;
         height: 100%;
-	}
-	</style>
-</head>
-<body>
-	<header>
-		<h1>Stargazers</h1>
-	</header>
-	
-	<div class="container">
-		<h2>Viewing Conditions</h2>
-		<p>API DATA HERE</p>
-	</div>
-	
-	<div class="container">
-    <h2>Fill Out This Form!</h2>
-    <form>
-      <div >
-        <label>City Name</label>
-        <input>
-      </div>
-      <button type="submit" >Submit</button>
-    </form>
-	</div>
-	
-	<div class="container">
-		<h2>Pic of the Day</h2>
-		<p>API DATA HERE</p>
-	</div>
-  <canvas id="canvas" width="100%" height="100%"></canvas>
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Stargazers</h1>
+    </header>
 
-</body>
+    <div class="container">
+      <h2>Viewing Conditions</h2>
+      <p>API DATA HERE</p>
+    </div>
+
+    <div class="container">
+      <h2>Fill Out This Form!</h2>
+      <form>
+        <div>
+          <label>City Name</label>
+          <input />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <h2>Pic of the Day</h2>
+      <div id="apod"></div>
+    </div>
+    <canvas id="canvas" width="100%" height="100%"></canvas>
+  </body>
 </html>
