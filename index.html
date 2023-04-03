@@ -3,6 +3,7 @@
   <head>
     <title>Stargazers</title>
     <script type="text/javascript" src="assets\js\background.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style type="text/css">
       html,
       body {
@@ -18,6 +19,20 @@
     </style>
   </head>
   <body>
+<!-- Adding code for the pop-up -->
+<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Modal Header</h4>
+    <p>A bunch of text</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
+<!-- last of code for the pop-up -->
+
     <header>
       <h1>Stargazers</h1>
     </header>
@@ -44,6 +59,7 @@
     </div>
     <canvas id="canvas" width="100%" height="100%"></canvas>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="assets\js\script.js"></script>
   </body>
 </html>
