@@ -33,6 +33,7 @@ fetch(nasaCall)
     }
   });
 
+
 var apiKey = '761e346dafa7493bf1d4e34f98aecb7c';
 var searchForm = document.querySelector('#search-form');
 var searchInput = document.querySelector('#city-input');
@@ -75,3 +76,11 @@ function getWeatherData(city) {
     searchInput.value = '';
   }
     searchForm.addEventListener('submit', handleFormSubmit);
+
+    
+  // Modal code
+
+  $(document).ready(function(){
+    $('#pop-up').modal();
+    $('#pop-up').modal('open'); 
+  });
