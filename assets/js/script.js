@@ -36,7 +36,8 @@ fetch(nasaCall)
 
 var apiKey = '761e346dafa7493bf1d4e34f98aecb7c';
 var searchForm = document.querySelector('#search-form');
-var searchInput = document.querySelector('#city-input');
+// var searchInput = document.querySelector('#city-input');
+var modalInput = document.querySelector('#modal-input');
 var currentWeather = document.querySelector('#current-weather');
 var currentTemp = document.getElementById('currentTemp');
 var currentVisibility = document.getElementById('currentVisibility');
@@ -57,7 +58,7 @@ function getWeatherData(city) {
       .then(data => {
         console.log(data);
         currentTemp.textContent = (data.list[0].main.temp) + "F";
-        currentVisibility.textContent = (data.list[0].visibility) + "m";
+        currentVisibility.textContent = (data.list[0].visibility) + "m of visibility";
         currentDescription.textContent = data.list[0].weather[0].description.toUpperCase();
         currentClouds.textContent = (data.list[0].clouds.all) + "% CLOUD COVER";
         var iconCode = data.list[0].weather[0].icon;
@@ -68,19 +69,23 @@ function getWeatherData(city) {
 
   function handleFormSubmit(event) {
     event.preventDefault();
-    var city = searchInput.value.trim();
+    var city = modalInput.value.trim();
     if (city) {
         getWeatherData(city)
         
     }
-    searchInput.value = '';
+    modalInput.value = '';
   }
     searchForm.addEventListener('submit', handleFormSubmit);
-
     
+
   // Modal code
 
   $(document).ready(function(){
     $('#pop-up').modal();
+    $('#pop-up').modal('open'); 
+  });
+
+  $('#new-search').on('click', function(){
     $('#pop-up').modal('open'); 
   });
