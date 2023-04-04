@@ -1,0 +1,47 @@
+html {
+
+    margin: 0px;
+    background-color: #18122B;
+
+}
+
+header {
+
+    text-align: center;
+    background-image: url("/assets/images/banner.jpg");
+  }
+
+li {
+    display: inline-block;
+    padding-left: 200px;
+    padding-right:200px;
+    
+}
+
+ul {
+    padding: 0px;
+}
+
+.factStar {
+
+    display: inline-block;
+}
+
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    border: 5px solid #393053;
+    box-shadow: 5px 10px #393053;
+    background-color: #635985;
+    display: flex;
+}
+
+img{
+    margin:16px;
+}
+
+p {
+
+    margin-left: 16px;
+}
