@@ -37,10 +37,9 @@ var apiKey = '761e346dafa7493bf1d4e34f98aecb7c';
 var searchForm = document.querySelector('#search-form');
 var searchInput = document.querySelector('#city-input');
 var currentWeather = document.querySelector('#current-weather');
-var currentTemp = document.getElementById('currentCity');
-var currentWind = document.getElementById('currentCity');
-var currentVisibility = document.getElementById('currentCity');
-var selectedClouds = document.getElementById('currentCity');
+var currentTemp = document.getElementById('currentTemp');
+var currentVisibility = document.getElementById('currentVisibility');
+var currentClouds = document.getElementById('currentClouds');
 var selectedIcon = document.getElementById('#weatherIcon');
 
 
@@ -55,15 +54,13 @@ function getWeatherData(city) {
       })
       .then(data => {
         console.log(data);
-        displayCurrentWeather(data)
+        currentVisibility.textContent = data.list[0].visibility;
       });
     };
 
-function displayCurrentWeather(weatherData) {
 
-console.log(weatherData)
 
-  };
+// console.log(weatherData);
 
   function handleFormSubmit(event) {
     event.preventDefault();
