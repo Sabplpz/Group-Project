@@ -60,7 +60,7 @@ function getWeatherData(city) {
 
 
 
-// console.log(weatherData);
+console.log(weatherData);
 
   function handleFormSubmit(event) {
     event.preventDefault();
