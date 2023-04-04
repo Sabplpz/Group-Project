@@ -29,18 +29,22 @@
 
     <div class="container">
       <h2>Viewing Conditions</h2>
-      <p>API DATA HERE</p>
+      <div id="weather-conditions">
+        <p id="currentDate"></p>
+          <div id="iconDisplay"><img id="weatherIcon" src=""></div>
+          <p id="currentTemp"></p>
+          <p id="currentVisibility"></p>
+          <p id="currentClouds"></p>
+      </div>
     </div>
 
-    <div class="container">
+    <div class="search-form">
       <h2>Fill Out This Form!</h2>
-      <form>
-        <div>
-          <label>City Name</label>
-          <input />
-        </div>
-        <button type="submit">Submit</button>
-      </form>
+      <form id="search-form">
+        <label var="city-input">Enter City Name:</label>
+        <input type="text" id="city-input" name="city">
+        <button type="submit">Search</button>
+    </form>
     </div>
 
     <div class="container">
