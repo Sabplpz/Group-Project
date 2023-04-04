@@ -75,3 +75,11 @@ function getWeatherData(city) {
     searchInput.value = '';
   }
     searchForm.addEventListener('submit', handleFormSubmit);
+
+    
+  // Modal code
+
+  $(document).ready(function(){
+    $('#pop-up').modal();
+    $('#pop-up').modal('open'); 
+  });
