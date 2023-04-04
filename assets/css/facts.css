@@ -1,20 +1,29 @@
 html {
 
-    margin: 0px;
-    background-color: #18122B;
+    margin: -8px;
+    background: rgb(99,89,133);
+    background: radial-gradient(circle, rgba(99,89,133,1) 0%, rgba(68,60,104,1) 35%, rgba(24,18,43,1) 100%);
+}
 
+h1 {
+    margin: 0px;
+    font-family: 'Orbitron', sans-serif;
+    padding-top: 10px;
 }
 
 header {
-
     text-align: center;
-    background-image: url("/assets/images/banner.jpg");
-  }
+    background-image: url("../images/banner.jpg");
+    color:#C6ae84;
+}
+
+
 
 li {
     display: inline-block;
     padding-left: 200px;
     padding-right:200px;
+    color:#C6ae84;
     
 }
 
