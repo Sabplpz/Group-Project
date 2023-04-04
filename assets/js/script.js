@@ -39,6 +39,7 @@ var searchInput = document.querySelector('#city-input');
 var currentWeather = document.querySelector('#current-weather');
 var currentTemp = document.getElementById('currentTemp');
 var currentVisibility = document.getElementById('currentVisibility');
+var currentDescription = document.getElementById('currentDescription');
 var currentClouds = document.getElementById('currentClouds');
 var selectedIcon = document.getElementById('weatherIcon');
 
@@ -56,7 +57,8 @@ function getWeatherData(city) {
         console.log(data);
         currentTemp.textContent = (data.list[0].main.temp) + "F";
         currentVisibility.textContent = (data.list[0].visibility) + "m";
-        currentClouds.textContent = data.list[0].weather[0].description.toUpperCase();
+        currentDescription.textContent = data.list[0].weather[0].description.toUpperCase();
+        currentClouds.textContent = (data.list[0].clouds.all) + "% CLOUD COVER";
         var iconCode = data.list[0].weather[0].icon;
         var iconUrl = 'https://openweathermap.org/img/wn/' + iconCode + '@2x.png';
         selectedIcon.setAttribute('src', iconUrl);
