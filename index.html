@@ -14,6 +14,7 @@
     />
   </head>
   <body>
+    
     <!-- Adding code for the pop-up -->
 
     <div id="pop-up" class="modal">
@@ -32,9 +33,16 @@
     <header>
       <h1>Stargazers</h1>
     </header>
+    <div class="nav" id="nav">
+      <li class="nav-text">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./facts.html">Constalations</a></li>
+        <li><a href="">Learn More</a></li>
+      </ul>
+    </div>
 
-    <div class="container">
-      <h2 id="conditions">Viewing Conditions</h2>
+    <div class="flex-container">
+      <h2 id="conditions column">Viewing Conditions</h2>
       <div id="weather-conditions">
         <p id="currentDate"></p>
         <div id="iconDisplay"><img id="weatherIcon" src="" /></div>
@@ -45,8 +53,8 @@
       </div>
     </div>
 
-    <div class="search-form">
-      <h2>Fill Out This Form!</h2>
+    <div class="search-form flex-container">
+      <h2 id="column">Fill Out This Form!</h2>
       <form id="search-form">
         <label var="city-input">Enter City Name:</label>
         <input type="text" id="city-input" name="city" />
@@ -55,7 +63,7 @@
     </div>
 
     <div class="container">
-      <h2>Pic of the Day</h2>
+      <h2>Pic of the Moment</h2>
       <div id="apod"></div>
     </div>
 
