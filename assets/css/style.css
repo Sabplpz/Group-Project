@@ -1,17 +1,58 @@
 html {
+  margin: -8px;
+  background: rgb(99, 89, 133);
+  background: radial-gradient(
+    circle,
+    rgba(99, 89, 133, 1) 0%,
+    rgba(68, 60, 104, 1) 35%,
+    rgba(24, 18, 43, 1) 100%
+  );
+}
+
+h1 {
   margin: 0px;
-  background-color: #18122b;
+  font-family: "Orbitron", sans-serif;
+  padding-top: 10px;
 }
 
 header {
   text-align: center;
-  background-image: url("/assets/images/banner.jpg");
-}
-body {
+  background-image: url("../images/banner.jpg");
   color: #c6ae84;
 }
+body {
+  color: rgb(138, 144, 161);
+}
+#conditions {
+  display: flex;
+  justify-content: center;
+}
+label {
+  font-size: 20px;
+}
+.search-form {
+  padding-left: 50px;
+}
+button {
+  background-color: #6554b1;
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+button:hover {
+  opacity: 1;
+}
 #city-input {
-  border: 3px solid #c6ae84;
+  border: 2px solid rgb(138, 144, 161);
   width: 210px;
   height: 25px;
+  background-color: rgb(67, 73, 90);
+}
+#city-input:hover {
+  background-color: rgb(138, 144, 161);
 }
