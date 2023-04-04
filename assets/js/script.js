@@ -39,8 +39,9 @@ var searchInput = document.querySelector('#city-input');
 var currentWeather = document.querySelector('#current-weather');
 var currentTemp = document.getElementById('currentTemp');
 var currentVisibility = document.getElementById('currentVisibility');
+var currentDescription = document.getElementById('currentDescription');
 var currentClouds = document.getElementById('currentClouds');
-var selectedIcon = document.getElementById('#weatherIcon');
+var selectedIcon = document.getElementById('weatherIcon');
 
 
 function getWeatherData(city) {
@@ -54,22 +55,22 @@ function getWeatherData(city) {
       })
       .then(data => {
         console.log(data);
-        currentVisibility.textContent = data.list[0].visibility;
+        currentTemp.textContent = (data.list[0].main.temp) + "F";
+        currentVisibility.textContent = (data.list[0].visibility) + "m";
+        currentDescription.textContent = data.list[0].weather[0].description.toUpperCase();
+        currentClouds.textContent = (data.list[0].clouds.all) + "% CLOUD COVER";
+        var iconCode = data.list[0].weather[0].icon;
+        var iconUrl = 'https://openweathermap.org/img/wn/' + iconCode + '@2x.png';
+        selectedIcon.setAttribute('src', iconUrl);
       });
     };
-
-
-
-// console.log(weatherData);
 
   function handleFormSubmit(event) {
     event.preventDefault();
     var city = searchInput.value.trim();
     if (city) {
         getWeatherData(city)
-        .then(weatherData => {
-            displayCurrentWeather(weatherData);
-        })
+        
     }
     searchInput.value = '';
   }
