@@ -1,5 +1,17 @@
 html {
-  margin: 0;
-  background-color: #C6AE64;
+  margin: 0px;
+  background-color: #18122b;
 }
 
+header {
+  text-align: center;
+  background-image: url("/assets/images/banner.jpg");
+}
+body {
+  color: #c6ae84;
+}
+#city-input {
+  border: 3px solid #c6ae84;
+  width: 210px;
+  height: 25px;
+}
