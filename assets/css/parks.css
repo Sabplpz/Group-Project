@@ -1,0 +1,63 @@
+html {
+
+    margin: -8px;
+    background: rgb(99,89,133);
+    background: radial-gradient(circle, rgba(99,89,133,1) 0%, rgba(68,60,104,1) 35%, rgba(24,18,43,1) 100%);
+}
+
+h1 {
+    margin: 0px;
+    font-family: 'Orbitron', sans-serif;
+    padding-top: 10px;
+}
+
+header {
+    text-align: center;
+    background-image: url("../images/banner.jpg");
+    color:#C6ae84;
+}
+
+
+
+li {
+    padding-left: 200px;
+    padding-right:200px;
+    color:#C6ae84;
+    
+}
+
+ul {
+    padding: 0px;
+}
+
+.factStar {
+
+    display: inline-block;
+}
+
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    border: 5px solid #393053;
+    box-shadow: 5px 10px #393053;
+    background-color: #635985;
+    display: flex;
+}
+
+img{
+    margin:16px;
+}
+
+p {
+
+    margin-left: 16px;
+}
+
+.mapImage {
+    width: 800px;
+}
+.mainContainer {
+    display: flex;
+    justify-content: left;
+}
