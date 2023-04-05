@@ -32,16 +32,12 @@ stateChoiceBtn.onclick = (event) => {
             console.log(data.total);
             for (i = 0; i < data.total; i++) {
                 console.log(data.data[i].url);
-                // var url = data.data[i].url;
                 var li = document.createElement('li');
                 var a = document.createElement('a');
-                // a.setAttribute('href', url);
-                // a.setAttribute('target', '_blank');
-                // a.innerHTML = 'link' + i;
-                li.textContent = data.data[i].name + ': ' + data.data[i].url;
-                // createA.href="data.data[i].url";
-                // li.appendChild(a);
+                a.href = data.data[i].url;
+                a.textContent = data.data[i].name;
+                li.appendChild(a);
                 urlList.appendChild(li);
             }
-        })	
+        })    
 };
