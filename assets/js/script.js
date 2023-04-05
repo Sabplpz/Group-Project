@@ -89,3 +89,9 @@ function getWeatherData(city) {
   $('#new-search').on('click', function(){
     $('#pop-up').modal('open'); 
   });
+
+  // Slide for facts.html
+
+  $(document).ready(function(){
+    $('.slider').slider();
+  });
