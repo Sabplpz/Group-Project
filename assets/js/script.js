@@ -90,8 +90,6 @@ function getWeatherData(city) {
     $('#pop-up').modal('open'); 
   });
 
-  // Slide for facts.html
-
   $(document).ready(function(){
     $('.slider').slider();
   });
