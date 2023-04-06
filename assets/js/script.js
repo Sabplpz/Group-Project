@@ -90,6 +90,4 @@ function getWeatherData(city) {
     $('#pop-up').modal('open'); 
   });
 
-  $(document).ready(function(){
-    $('.slider').slider();
-  });
+  

@@ -5,8 +5,6 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>StarGazers</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Stargazers</title>
-    <!-- <script type="text/javascript" src="assets\js\background.js"></script> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
@@ -33,7 +31,7 @@
     <!-- last of code for the pop-up -->
 
     <header>
-      <h1>Stargazers</h1>
+      <h1>StarGazers</h1>
     </header>
     <nav>
       <div class="nav-wrapper">
@@ -46,29 +44,30 @@
     </nav>
 
     <div class="container">
-    <div class="flex-container">
-      
-      <div class="left-side" id="weather-conditions">
-        <h2 id="conditions column">Viewing Conditions</h2>
-        <p id="currentDate"></p>
-        <div id="iconDisplay"><img id="weatherIcon" src="" /></div>
-        <p id="currentTemp"></p>
-        <p id="currentVisibility"></p>
-        <p id="currentDescription"></p>
-        <p id="currentClouds"></p>
+      <div class="flex-container">
+        
+        <div class="left-side" id="weather-conditions">
+          <h2 id="conditions column">Viewing Conditions</h2>
+          <p id="currentDate"></p>
+          <div id="iconDisplay"><img id="weatherIcon" src="" /></div>
+          <p id="currentTemp"></p>
+          <p id="currentVisibility"></p>
+          <p id="currentDescription"></p>
+          <p id="currentClouds"></p>
+        </div>
+
+        <div class="new-search left-side">
+          <h2>Wanna look up another city?</h2>
+            <button type="submit" id="new-search">Click me!</button>
+        </div>
+
       </div>
 
-      <div class="new-search left-side">
-        <h2>Wanna look up another city?</h2>
-          <button type="submit" id="new-search">Click me!</button>
+      <div class="right-side">
+        <h2>Pic of the Moment</h2>
+        <div id="apod"></div>
       </div>
 
-    </div>
-
-    <div class="container">
-      <h2>Pic of the Moment</h2>
-      <div id="apod"></div>
-    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
