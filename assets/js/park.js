@@ -41,3 +41,8 @@ stateChoiceBtn.onclick = (event) => {
             }
         })    
 };
+
+// Code for select
+$(document).ready(function(){
+    $('select').formSelect();
+  });
