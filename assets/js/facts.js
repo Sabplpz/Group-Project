@@ -1,3 +1,5 @@
-$(document).ready(function(){
-    $('.slider').slider();
+$(document).ready(function () {
+  $(".slider").slider({
+    height: 625,
   });
+});
