@@ -5,6 +5,10 @@ html {
     background: radial-gradient(circle, rgba(99,89,133,1) 0%, rgba(68,60,104,1) 35%, rgba(24,18,43,1) 100%);
 }
 
+main {
+    text-align: center;
+}
+
 h1 {
     margin: 0px;
     font-family: 'Orbitron', sans-serif;
@@ -12,10 +16,12 @@ h1 {
 }
 
 header {
+    padding: 1%;
     text-align: center;
     background-image: url("../images/banner.jpg");
-    color:#C6ae84;
-}
+    background-size: 100%;
+    color: #c6ae84;
+  }
 
 nav {
   display: flex;
@@ -63,7 +69,6 @@ a:hover {
 }
 
 .factStar {
-
     display: inline-block;
 }
 
@@ -90,7 +95,11 @@ p {
     width: 800px;
 }
 
-.mainContainer {
+.main-container {
     display: flex;
-    justify-content: left;
+    justify-content: center;
+}
+
+.links{
+    margin-top: 4rem;
 }
