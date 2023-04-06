@@ -1,5 +1,4 @@
 html {
-
     margin: -8px;
     background: rgb(99,89,133);
     background: radial-gradient(circle, rgba(99,89,133,1) 0%, rgba(68,60,104,1) 35%, rgba(24,18,43,1) 100%);
@@ -17,8 +16,6 @@ header {
     color:#C6ae84;
 }
 
-
-
 li {
     display: inline-block;
     padding-left: 200px;
@@ -32,10 +29,8 @@ ul {
 }
 
 .factStar {
-
     display: inline-block;
 }
-
 
 .container {
     width: 80%;
@@ -46,11 +41,10 @@ ul {
     display: flex;
 }
 
-img{
+img {
     margin:16px;
 }
 
 p {
-
     margin-left: 16px;
 }
