@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>StarGazers</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Stargazers</title>
     <!-- <script type="text/javascript" src="assets\js\background.js"></script> -->
     <link
@@ -31,17 +35,21 @@
     <header>
       <h1>Stargazers</h1>
     </header>
-    <div class="nav" id="nav">
-      <li class="nav-text">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./facts.html">Constellations</a></li>
-        <li><a href="">Learn More</a></li>
-      </ul>
-    </div>
+    <nav>
+      <div class="nav-wrapper">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="facts.html">Constellations</a></li>
+          <li><a href="parks.html">Parks</a></li>
+          <li><a href="https://www.nasa.gov/audience/forstudents/k-4/dictionary/Constellation.html">Learn More!</a></li>
+        </ul>
+      </div>
+    </nav>
 
+    <div class="container">
     <div class="flex-container">
-      <h2 id="conditions column">Viewing Conditions</h2>
-      <div id="weather-conditions">
+      
+      <div class="left-side" id="weather-conditions">
+        <h2 id="conditions column">Viewing Conditions</h2>
         <p id="currentDate"></p>
         <div id="iconDisplay"><img id="weatherIcon" src="" /></div>
         <p id="currentTemp"></p>
@@ -49,16 +57,18 @@
         <p id="currentDescription"></p>
         <p id="currentClouds"></p>
       </div>
-    </div>
 
-    <div class="new-search">
-      <h2>Wanna look up another city?</h2>
-        <button type="submit" id="new-search">Click me!</button>
+      <div class="new-search left-side">
+        <h2>Wanna look up another city?</h2>
+          <button type="submit" id="new-search">Click me!</button>
+      </div>
+
     </div>
 
     <div class="container">
       <h2>Pic of the Moment</h2>
       <div id="apod"></div>
+    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

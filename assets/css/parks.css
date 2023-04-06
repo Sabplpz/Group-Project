@@ -17,7 +17,16 @@ header {
     color:#C6ae84;
 }
 
+nav {
+  display: flex;
+  background-color: #6554b1;
+  justify-content: center;
+}
 
+#nav-mobile a{
+  font-size: 1.25rem;
+  margin-left: 10rem;
+}
 
 li {
     padding-left: 200px;
