@@ -34,6 +34,11 @@ nav {
   margin-left: 10rem;
 }
 
+nav {
+  display: flex;
+  background-color: #6554b1;
+  justify-content: center;
+}
 button {
     background-color: #6554b1;
     border: none;
@@ -57,7 +62,7 @@ li {
 
 ul {
     margin-left: -180px;
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
 a,p,h2,label {
