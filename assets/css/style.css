@@ -29,13 +29,17 @@ nav {
   justify-content: center;
 }
 
-#nav-mobile a{
+/* #nav-mobile a {
   font-size: 1.25rem;
   margin-left: 10rem;
-}
+} */
 
 body {
-  color: rgb(138, 144, 161);
+  color: rgb(238, 239, 245);
+}
+h2,
+h4 {
+  color: #c6ae84;
 }
 label {
   font-size: 20px;
@@ -67,7 +71,7 @@ button:hover {
   background-color: rgb(138, 144, 161);
 }
 
-#apod{
+#apod {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,7 +85,7 @@ button:hover {
   margin-right: auto;
 }
 
-.container{
+.container {
   display: flex;
   width: auto;
 }
@@ -92,14 +96,14 @@ button:hover {
   text-align: center;
 }
 
-.left-side{
+.left-side {
   border: 0.2rem solid rgba(24, 18, 43, 1);
   margin: 1rem;
   padding: 1rem;
   width: 28rem;
 }
 
-.right-side{
+.right-side {
   display: flex;
   flex-direction: column;
   border: 0.2rem solid rgba(24, 18, 43, 1);
@@ -107,4 +111,12 @@ button:hover {
   padding: 1rem;
   width: 100rem;
   text-align: center;
+}
+
+@media (max-width: 996px) {
+  nav {
+    width: ;
+  }
+  .right-side {
+  }
 }
