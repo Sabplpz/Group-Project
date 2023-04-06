@@ -1,3 +1,6 @@
+/* ~~~~~~~~~~~~~~~~~~~~~ STYLING USED FOR THE FACTS.HTML PAGE ~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
 html {
     margin: -8px;
     background: rgb(99,89,133);
@@ -21,7 +24,6 @@ li {
     padding-left: 200px;
     padding-right:200px;
     color:#C6ae84;
-    
 }
 
 ul {

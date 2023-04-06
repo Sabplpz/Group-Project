@@ -1,3 +1,6 @@
+/* ~~~~~~~~~~~~~~~~~~~~~ STYLING USED FOR THE INDEX.HTML PAGE ~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
 html {
   margin: -8px;
   background: rgb(99, 89, 133);
@@ -20,11 +23,13 @@ header {
   background-image: url("../images/banner.jpg");
   color: #c6ae84;
 }
+
 a {
   cursor: pointer;
   color: #b6eada;
   text-decoration: none;
 }
+
 a:hover {
   color: #5b8fb9;
   transition-property: font-size;
@@ -32,6 +37,7 @@ a:hover {
   transition-duration: 0.3s;
   font-size: 20px;
 }
+
 .nav {
   padding-right: 60px;
   display: flex;
@@ -40,15 +46,19 @@ a:hover {
   transition-timing-function: ease-in;
   transition: all 0.5s;
 }
+
 body {
   color: rgb(138, 144, 161);
 }
+
 label {
   font-size: 20px;
 }
+
 .search-form {
   padding-left: 50px;
 }
+
 button {
   background-color: #6554b1;
   border: none;
@@ -60,22 +70,27 @@ button {
   opacity: 0.6;
   transition: 0.3s;
 }
+
 button:hover {
   opacity: 1;
 }
+
 #city-input {
   border: 2px solid rgb(138, 144, 161);
   width: 210px;
   height: 25px;
   background-color: rgb(67, 73, 90);
 }
+
 #city-input:hover {
   background-color: rgb(138, 144, 161);
 }
+
 #apod img {
   max-height: 50%;
   max-width: 50%;
 }
+
 .flex-container {
   display: flex;
   flex-direction: column;

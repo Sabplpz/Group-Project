@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Basic linking and parameters for responsiveness and accessibility -->
     <title>Stargazers</title>
     <!-- <script type="text/javascript" src="assets\js\background.js"></script> -->
     <link
@@ -22,12 +23,13 @@
         <form id="search-form">
           <label var="city-input">Enter City Name:</label>
           <input type="text" id="modal-input" name="city" />
-         <button class="modal-close" type="submit">Search</button>
+          <button class="modal-close" type="submit">Search</button>
         </form>
       </div>
     </div>
     <!-- last of code for the pop-up -->
 
+    <!-- Navbar links to other pages -->
     <header>
       <h1>Stargazers</h1>
     </header>
@@ -39,6 +41,7 @@
       </ul>
     </div>
 
+    <!-- Creates a container where the local weather information will be displayed -->
     <div class="flex-container">
       <h2 id="conditions column">Viewing Conditions</h2>
       <div id="weather-conditions">
@@ -51,19 +54,22 @@
       </div>
     </div>
 
+    <!-- Creates a clickable element to allow the user to choose a new city input -->
     <div class="new-search">
       <h2>Wanna look up another city?</h2>
         <button type="submit" id="new-search">Click me!</button>
     </div>
 
+    <!-- This container is used to hold the pic of the day information -->
     <div class="container">
       <h2>Pic of the Moment</h2>
       <div id="apod"></div>
     </div>
 
+    <!-- Basic linking for JS code pages -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="assets\js\script.js"></script>
-   
+  
   </body>
 </html>
