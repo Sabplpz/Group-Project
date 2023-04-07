@@ -55,3 +55,6 @@ MIT License
 ## Links
 
 Deployed site: 
+
+Presentation Link: https://docs.google.com/presentation/d/1QvuiU95szB3cFb6j4h8JTTJH0N5B_CEYr0NA7swLMJs/edit#slide=id.p
+

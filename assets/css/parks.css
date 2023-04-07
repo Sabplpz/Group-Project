@@ -1,5 +1,7 @@
-html {
+/* ~~~~~~~~~~~~~~~~~~~~~ STYLING USED FOR THE PARKS.HTML PAGE ~~~~~~~~~~~~~~~~~~~~~~~ */
 
+
+html {
     margin: -8px;
     background: rgb(99,89,133);
     background: radial-gradient(circle, rgba(99,89,133,1) 0%, rgba(68,60,104,1) 35%, rgba(24,18,43,1) 100%);
@@ -54,8 +56,6 @@ button {
     opacity: 1;
   }
 
-
-
 li {
     list-style: none;
 }
@@ -65,18 +65,9 @@ ul {
     margin-top: 50px;
 }
 
-a,p,h2,label {
-    color: #C6ae84;
-}
-
-a:hover {
-    color: #e2cfaf;
-}
-
 .factStar {
     display: inline-block;
 }
-
 
 .container {
     width: 80%;
@@ -92,7 +83,6 @@ img{
 }
 
 p {
-
     margin-left: 16px;
 }
 

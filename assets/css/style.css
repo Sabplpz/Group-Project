@@ -1,3 +1,6 @@
+/* ~~~~~~~~~~~~~~~~~~~~~ STYLING USED FOR THE INDEX.HTML PAGE ~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
 html {
   margin: -8px;
   background: rgb(99, 89, 133);
@@ -29,20 +32,28 @@ nav {
   justify-content: center;
 }
 
-#nav-mobile a{
+
+/* #nav-mobile a {
   font-size: 1.25rem;
   margin-left: 10rem;
-}
+} */
 
 body {
-  color: rgb(138, 144, 161);
+  color: rgb(238, 239, 245);
 }
+h2,
+h4 {
+  color: #c6ae84;
+}
+
 label {
   font-size: 20px;
 }
+
 .search-form {
   padding-left: 50px;
 }
+
 button {
   background-color: #6554b1;
   border: none;
@@ -54,20 +65,23 @@ button {
   opacity: 0.6;
   transition: 0.3s;
 }
+
 button:hover {
   opacity: 1;
 }
+
 #city-input {
   border: 2px solid rgb(138, 144, 161);
   width: 210px;
   height: 25px;
   background-color: rgb(67, 73, 90);
 }
+
 #city-input:hover {
   background-color: rgb(138, 144, 161);
 }
 
-#apod{
+#apod {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,7 +95,7 @@ button:hover {
   margin-right: auto;
 }
 
-.container{
+.container {
   display: flex;
   width: auto;
 }
@@ -92,14 +106,14 @@ button:hover {
   text-align: center;
 }
 
-.left-side{
+.left-side {
   border: 0.2rem solid rgba(24, 18, 43, 1);
   margin: 1rem;
   padding: 1rem;
   width: 28rem;
 }
 
-.right-side{
+.right-side {
   display: flex;
   flex-direction: column;
   border: 0.2rem solid rgba(24, 18, 43, 1);
@@ -108,3 +122,12 @@ button:hover {
   width: 100rem;
   text-align: center;
 }
+
+@media (max-width: 996px) {
+  nav {
+    width: ;
+  }
+  .right-side {
+  }
+}
+
