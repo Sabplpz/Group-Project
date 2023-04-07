@@ -1,3 +1,5 @@
+/* ~~~~~~~~~~~~~~~~~~~~~ STYLING USED FOR THE FACTS.HTML PAGE ~~~~~~~~~~~~~~~~~~~~~~~ */
+
 html {
   margin: -8px;
   background: rgb(99, 89, 133);
@@ -6,7 +8,8 @@ html {
     rgba(99, 89, 133, 1) 0%,
     rgba(68, 60, 104, 1) 35%,
     rgba(24, 18, 43, 1) 100%
-  );
+ );
+
 }
 
 h1 {
@@ -47,6 +50,7 @@ main {
   box-shadow: 0.5rem 1rem black;
   background-color: #635985;
 }
+
 .slider .slides li {
   width: 99%;
 }
