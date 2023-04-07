@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Basic linking and parameters for responsiveness and accessibility -->
-    <title>Stargazers</title>
-    <!-- <script type="text/javascript" src="assets\js\background.js"></script> -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>StarGazers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
@@ -15,7 +16,6 @@
     />
   </head>
   <body>
-    
     <!-- Adding code for the pop-up -->
     <div id="pop-up" class="modal">
       <div class="modal-content">
@@ -31,45 +31,56 @@
 
     <!-- Navbar links to other pages -->
     <header>
-      <h1>Stargazers</h1>
+      <h1>StarGazers</h1>
     </header>
-    <div class="nav" id="nav">
-      <li class="nav-text">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./facts.html">Constellations</a></li>
-        <li><a href="">Learn More</a></li>
-      </ul>
-    </div>
-
-    <!-- Creates a container where the local weather information will be displayed -->
-    <div class="flex-container">
-      <h2 id="conditions column">Viewing Conditions</h2>
-      <div id="weather-conditions">
-        <p id="currentDate"></p>
-        <div id="iconDisplay"><img id="weatherIcon" src="" /></div>
-        <p id="currentTemp"></p>
-        <p id="currentVisibility"></p>
-        <p id="currentDescription"></p>
-        <p id="currentClouds"></p>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <ul id="nav-mobile" class="right">
+          <li><a href="facts.html">Constellations</a></li>
+          <li><a href="parks.html">Parks</a></li>
+          <li>
+            <a
+              href="https://www.nasa.gov/audience/forstudents/k-4/dictionary/Constellation.html"
+              >Learn More!</a
+            >
+          </li>
+        </ul>
       </div>
-    </div>
-
-    <!-- Creates a clickable element to allow the user to choose a new city input -->
-    <div class="new-search">
-      <h2>Wanna look up another city?</h2>
-        <button type="submit" id="new-search">Click me!</button>
-    </div>
+    </nav>
 
     <!-- This container is used to hold the pic of the day information -->
     <div class="container">
-      <h2>Pic of the Moment</h2>
-      <div id="apod"></div>
+      <div class="flex-container">
+        <div class="left-side" id="weather-conditions">
+          <h2 id="conditions column">Viewing Conditions</h2>
+          <p id="currentDate"></p>
+          <div id="iconDisplay"><img id="weatherIcon" src="" /></div>
+          <p id="currentTemp"></p>
+          <p id="currentVisibility"></p>
+          <p id="currentDescription"></p>
+          <p id="currentClouds"></p>
+        </div>
+
+        <div class="new-search left-side">
+          <h2>Wanna look up another city?</h2>
+          <button type="submit" id="new-search">Click me!</button>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <h2>Pic of the Moment</h2>
+        <div id="apod"></div>
+      </div>
     </div>
 
     <!-- Basic linking for JS code pages -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="assets\js\script.js"></script>
-  
   </body>
 </html>

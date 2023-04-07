@@ -7,6 +7,10 @@ html {
     background: radial-gradient(circle, rgba(99,89,133,1) 0%, rgba(68,60,104,1) 35%, rgba(24,18,43,1) 100%);
 }
 
+main {
+    text-align: center;
+}
+
 h1 {
     margin: 0px;
     font-family: 'Orbitron', sans-serif;
@@ -14,18 +18,51 @@ h1 {
 }
 
 header {
+    padding: 1%;
     text-align: center;
     background-image: url("../images/banner.jpg");
-    color:#C6ae84;
+    background-size: 100%;
+    color: #c6ae84;
+  }
+
+nav {
+  display: flex;
+  background-color: #6554b1;
+  justify-content: center;
 }
 
+#nav-mobile a{
+  font-size: 1.25rem;
+  margin-left: 10rem;
+}
+
+nav {
+  display: flex;
+  background-color: #6554b1;
+  justify-content: center;
+}
+button {
+    background-color: #6554b1;
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  button:hover {
+    opacity: 1;
+  }
+
 li {
-    color:#C6ae84;
+    list-style: none;
 }
 
 ul {
-    padding-top: 80px;
     margin-left: -180px;
+    margin-top: 50px;
 }
 
 .factStar {
@@ -53,7 +90,11 @@ p {
     width: 800px;
 }
 
-.mainContainer {
+.main-container {
     display: flex;
-    justify-content: left;
+    justify-content: center;
+}
+
+.links{
+    margin-top: 4rem;
 }

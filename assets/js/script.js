@@ -97,6 +97,7 @@ function getWeatherData(city) {
 
 // -------------------------------- INITIAL MODAL POP-UP ------------------------------------
 
+
 // Lines 106-109: On page load, the modal is called to open
 $(document).ready(function(){
   $('#pop-up').modal();
@@ -109,14 +110,3 @@ $('#new-search').on('click', function(){
 });
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~ END OF CODE USED FOR THE INDEX.HTML PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~  CODE USED FOR THE FACTS.HTML PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-// ---------------------------------- SLIDER IMAGE GALLERY ----------------------------------------
-
-// Used to load the slider gallery upon entering the facts.html
-$(document).ready(function(){
-  $('.slider').slider();
-});
