@@ -1,3 +1,5 @@
+/* ~~~~~~~~~~~~~~~~~~~~~ STYLING USED FOR THE INDEX.HTML PAGE ~~~~~~~~~~~~~~~~~~~~~~~ */
+
 html {
   margin: -8px;
   background: rgb(99, 89, 133);
@@ -41,12 +43,15 @@ h2,
 h4 {
   color: #c6ae84;
 }
+
 label {
   font-size: 20px;
 }
+
 .search-form {
   padding-left: 50px;
 }
+
 button {
   background-color: #6554b1;
   border: none;
@@ -58,15 +63,18 @@ button {
   opacity: 0.6;
   transition: 0.3s;
 }
+
 button:hover {
   opacity: 1;
 }
+
 #city-input {
   border: 2px solid rgb(138, 144, 161);
   width: 210px;
   height: 25px;
   background-color: rgb(67, 73, 90);
 }
+
 #city-input:hover {
   background-color: rgb(138, 144, 161);
 }

@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+
+<!-- Basic linking and parameters for responsiveness and accessibility -->
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -19,12 +21,14 @@
 
 </head>
 <body>
+
+    <!-- Navbar links to other pages -->
     <header>
         <h1>StarGazers</h1>
     </header>
     <nav>
         <div class="nav-wrapper">
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <ul id="nav-mobile">
             <li><a href="index.html">Home Page</a></li>
             <li><a href="facts.html">Constellations</a></li>
             <li><a href="https://www.nasa.gov/audience/forstudents/k-4/dictionary/Constellation.html">Learn More!</a></li>
@@ -32,6 +36,8 @@
         </div>
       </nav>
 
+    <!-- The bulk of this page is used to display a map of the national parks, as well a dropdown... -->
+    <!-- ...list of states to allow a user to look up park information -->
     <main>
         <h2>Stargazing & National Parks</h2>
         <p>The perfect match</p>
@@ -41,8 +47,8 @@
                 <img src="assets/images/parksMap.jpg" width="40%" height="auto" class="mapImage">
             </section>
             <div> 
-                <select id="state-codes" name="state-codes">
-                    <option value="">Select a state code</option>
+                <select id="state-codes" name="state-codes" class="state=codes">
+                    <option value="">Select a State</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -99,14 +105,15 @@
             </form>
         </div>
         <div class="links">
+
             <ul id="urlList">
                 <a id="natParkURL" href=""></a>
             </ul>
         </div>
     </main>
-
-
 </body>
+
+<!-- Basic linking for JS code pages -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script type="text/javascript" src="assets\js\park.js"></script>
