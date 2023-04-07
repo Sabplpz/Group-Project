@@ -29,10 +29,10 @@ nav {
   justify-content: center;
 }
 
-/* #nav-mobile a {
+#nav-mobile a {
   font-size: 1.25rem;
   margin-left: 10rem;
-} */
+}
 
 body {
   color: rgb(238, 239, 245);
@@ -114,9 +114,15 @@ button:hover {
 }
 
 @media (max-width: 996px) {
+  header,
   nav {
-    width: ;
+    height: auto;
+    flex-direction: column;
+  }
+  .container {
+    flex-direction: column;
   }
   .right-side {
+    max-width: 392px;
   }
 }
