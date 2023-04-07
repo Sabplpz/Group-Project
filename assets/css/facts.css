@@ -60,3 +60,10 @@ main {
 img {
   margin: 1rem;
 }
+@media (max-width: 996px) {
+  header,
+  nav {
+    height: auto;
+    flex-direction: column;
+  }
+}
