@@ -7,8 +7,9 @@ html {
     background: radial-gradient(circle, rgba(99,89,133,1) 0%, rgba(68,60,104,1) 35%, rgba(24,18,43,1) 100%);
 }
 
-main {
+main,a {
     text-align: center;
+    color: #c6ae84;;
 }
 
 h1 {
@@ -97,4 +98,12 @@ p {
 
 .links{
     margin-top: 4rem;
+}
+
+a:hover{
+    color: #e2d0b1;
+}
+
+.select-dropdown{
+    color:#c6ae84;
 }
