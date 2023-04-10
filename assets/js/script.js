@@ -109,4 +109,21 @@ $('#new-search').on('click', function(){
   $('#pop-up').modal('open'); 
 });
 
+// Lines 113-121: Saves the value of city to localStorage under the key 'city'
+function handleFormSubmit(event) {
+  event.preventDefault();
+  var city = modalInput.value.trim();
+  if (city) {
+      getWeatherData(city);
+      localStorage.setItem('city', city);
+  }
+  modalInput.value = '';
+}
+
+// Lines 124-127: Retrieve the saved city from localStorage and passes it to the getWeatherData function, which will use it to fetch weather data from the OpenWeatherMap API
+var savedCity = localStorage.getItem('city');
+if (savedCity) {
+  getWeatherData(savedCity);
+}
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~ END OF CODE USED FOR THE INDEX.HTML PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
